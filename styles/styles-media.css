@@ -19,9 +19,15 @@
   }
 
 
+  /* @TODO
+  1. Mein section will change on 700 px and after 960 decrease font-size 
+  
+  
+  
+  */
+
 @media screen and (max-width: 960px) {
   
-
   .main-section {
     background: none;
     width: 100%;
@@ -110,5 +116,8 @@
     top: 1363px;
   }
 
-
+  .desktop-text-breakpoint {
+    display: inline;
+  }
+}
   
