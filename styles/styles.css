@@ -35,6 +35,10 @@ body {
   display: inline-block;
 }
 
+.header__logo {
+  padding: 27px 70px 0px;
+}
+
 .menu {
   display: block;
   width: 20px;
@@ -136,49 +140,18 @@ body {
   margin: 0;
 } 
 
-/* 
-
-
-
-.main-content__subtitle_up {
-  width: 119px;
-  height: 36px;
-  margin: 0px 443px 7px;
-}
-
-
-
-.main-content__title {
-  max-width: 1005px;
-  height: 180px;
-  margin: 43px 0px 103px;
-}
-
-
-
-.main-content__subtitle {
-  width: 728px;
-  height: 96px;
-  margin: 7px 138px 6px;
-}
-
-
-
-*/
 .border-line {
   text-align: center;
   max-width: 884px;
   width: 100%;
   margin: 0 auto;
 }
+
 .border-line span {
   display: inline-block;
   border: 3px solid #E4E4E4;
   width: 100%;
 }
-
-
-
 
 .btn {
   width: 236px;
@@ -196,7 +169,6 @@ body {
 
 .btn--contained {
   background-color: #FA4A0C;;
-  
 }
 
 .btn--outlined {
@@ -247,22 +219,20 @@ body {
 }
 
 .create-login__content {
-  width: 1641px;
-  height: 507px;
-  margin: 209px 82px 150px -282px;
-  justify-content: space-around;
+  max-width: 1440px;
+  width: 100%;
   display: flex;
-  align-items: center;
 }
 
 .create-login__img {
-  position: absolute;
-  margin: 78px 811px 53px 527px;
+  margin: 78px 0px 0px 195px;
 }
 
 .create-login__text {
-  margin: 83px 72px 144px 1000px;
-  display: flex;
+  max-width: 568px;
+  width: 100%;
+  height: 280px;
+  margin: 233px 0px 0px 0px;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -297,70 +267,61 @@ body {
   color: #737373;
 }
 
-
 .explore_varieties__content {
-  width: 1641px;
-  height: 507px;
-  margin: 150px 82px 150px -282px;
-  justify-content: space-around;
+  width: 100%;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
-.explore_varieties__img {
-  position: absolute;
-  margin: 72px 150px 54px 1315px;
-}
 
 .explore_varieties__text {
   max-width: 568px;
+  width: 100%;
   height: 280px;
-  margin: 88px 536px 139px 536px;
-  display: flex;
+  margin: 238px 0px 0px 300px;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .checkout__content {
-  width: 1641px;
-  height: 507px;
-  margin: 209px 82px 150px -282px;
-  justify-content: space-around;
+  width: 100%;
   display: flex;
-  align-items: center;
 }
 
 .checkout__img {
-  position: absolute;
-  margin: 78px 811px 53px 527px;
+  margin: 0px 0px 0px 195px;
 }
 
 .checkout__text {
-  margin: 83px 72px 144px 1000px;
-  display: flex;
+  max-width: 568px;
+  width: 100%;
+  height: 280px;
+  margin: 233px 0px 0px 55px;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .download-the-app__wrapper {
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
   height: 509px;
-  background: url(../assets/main/footer-background.jpg) no-repeat center;
-  background-size: cover;
 }
 
 .download-the-app__content {
+  height: 100%;
+  background: url(../assets/main/footer-background.jpg) no-repeat center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 .download-the-app__text {
-  position: absolute;
-  width: 860px;
-  height: 135px;
-  margin: 130px 290px 244px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 130px 0 50px;
 }
 
 .download-the-app__title h2 {
@@ -385,16 +346,16 @@ body {
   color: #FFFFFF;
 }
 
+
 .download-the-app__btn {
-  width: 331px;
+  max-width: 331px;
+  width: 100%;
   height: 64px;
-  margin: 315px 554px 130px;
-  display: flex;
   justify-content: space-between;
 }
 
 .download-the-app__btn .btn--contained {
-  width: 142px;
+  max-width: 142px;
   height: 64px;
   margin: 0px 10px;
   font-size: 16px;
@@ -406,7 +367,7 @@ body {
 }
 
 .download-the-app__btn .btn--outlined {
-  width: 173px;
+  max-width: 173px;
   height: 60px;
   font-size: 16px;
   line-height: 28px;
@@ -416,9 +377,11 @@ body {
   padding: 15px 42px;
 }
 
+
 .footer__content {
-  width: 1210px;
+  max-width: 1210px;
   height: 133px;
+  width: 100%;
   margin: 38px 115px;
 }
 
@@ -440,6 +403,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  list-style-type: none;
 }
 
 .footer__bottom_title h6 {
