@@ -1,33 +1,34 @@
-@media screen and (min-width: 960px) {
-  .menu {
-    display: none;
-  }
+@media screen and (max-width: 960px) {
 
+   body.active {
+    overflow: hidden;
+   }
   .navigation {
-    max-width: 580px;
-    width: 100%;
+    max-width: none;
+    width: auto;
+  }
+  .menu {
+    display: block;
   }
   .navigation__list {
-    list-style: none;
+    position: fixed;
+    right: 0;
+    top: 0;
     display: flex;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+    justify-content: flex-start;
+    background: rgba(0,0,0,.3);
+    transform: translateX(100%);
+    transition: all .3s ease-out;
+    z-index: 3;
   }
 
+  .navigation__list.active {
+    transform: translateX(0);
   }
 
-
-  /* @TODO
-  1. Mein section will change on 700 px and after 960 decrease font-size 
-  
-  
-  
-  */
-
-@media screen and (max-width: 960px) {
-  
   .main-content {
     background: none;
   }
@@ -42,15 +43,13 @@
     color: #737373;
   }
 
-  .main-content__title h1 {
+  .main-content__title h4 {
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 0.2px;
     color: #252B42;
-    align-items: center;
     padding: 10px;
-    display: flex;
-    flex-direction: row;
+   
   }
 
   .main-content__title span h4 {
@@ -105,13 +104,16 @@
   }
   
   .create-login__img {
-    margin: 0 auto;
+    margin-top: -95px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
   }
+
   
   .create-login__text {
     max-width: 568px;
     width: 100%;
-    height: 280px;
     margin: 0 auto;
     flex-direction: column;
     text-align: center;
@@ -186,6 +188,55 @@
   margin: 0px;
 }
 
+.header {
+  padding: 0 20px;
+}
+.header__logo {
+  padding: 0;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.main-content__subtitle h4 {
+  color: #737373;
+  font-size: 24px;
+}
+
+.highlight__img {
+  align-items: center;
+  justify-content: center;
+  height: 492px;
+}
+
+.highlight__img img {
+  position: static;
+  transform: translate(0, 0);
+  top: auto;
+  left: auto;
+}
+
+.main-content__text {
+  padding-bottom: 22px;
+}
+
+.btn  {
+  font-weight: 700;
+}
+
+.mob-line-swap-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.highlight__title {
+  margin:116px  0 50px;
+}
+
+.section__heading h4 {
+  margin-top: 65px;
+}
 
 
 }
