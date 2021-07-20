@@ -97,11 +97,11 @@ body {
   z-index: 1;
 }
 
-
 .navigation {
   max-width: 580px;
   width: 100%;
 }
+
 .navigation__list {
   list-style: none;
   display: flex;
@@ -262,14 +262,14 @@ body {
 }
 
 .create-login__img {
-  margin-top: 78px; 
+  margin-top: 78px;
+  margin-left: -65px;
 }
 
 .create-login__text {
   max-width: 568px;
   width: 100%;
-  
-  margin: 233px 0px 0px 0px;
+  margin: 233px 0px 0px -50px;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -311,10 +311,14 @@ body {
   justify-content: space-between;
 }
 
+.explore_varieties__img {
+  margin-right: -220px;
+}
 
 .explore_varieties__text {
   max-width: 568px;
   width: 100%;
+  margin-left: 65px;
   height: 280px;
   flex-direction: column;
   align-items: flex-start;
@@ -329,8 +333,13 @@ body {
 .checkout__text {
   max-width: 568px;
   width: 100%;
+  margin-left: 39px;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.checkout__img {
+  margin-left: -75px;
 }
 
 .download-the-app__wrapper {
@@ -342,7 +351,6 @@ body {
 }
 
 .download-the-app__content {
- 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -353,7 +361,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .download-the-app__title h2 {
@@ -382,6 +389,7 @@ body {
 .download-the-app__btn {
   max-width: 331px;
   width: 100%;
+  margin: 0 auto;
   padding-top: 50px;
   justify-content: space-between;
 }
@@ -409,17 +417,20 @@ body {
   padding: 15px 42px;
 }
 
-.footer__content {
+
+
+.footer .container {
+  max-width: 1210px;
+  width: 100%;
   padding: 40px 0 55px;
 }
 
-.footer__content_wrapper {
+.footer__content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-
 
 .footer__links {
   width: 171px;
@@ -434,7 +445,11 @@ body {
   list-style-type: none;
 }
 
-.footer__bottom_title h6 {
+.footer__bottom_title_mobile {
+  display: none;
+}
+
+.footer__bottom_title_desktop h6 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -444,6 +459,23 @@ body {
   letter-spacing: 0.1px;
   color: #5C5C5C;
 }
+
+.download-the-app__subtitle_mobile {
+  display: none;
+}
+
+.download-the-app__subtitle_desktop {
+  display: block;
+}
+
+.download-the-app__btn_desktop {
+  display: block;
+}
+
+.download-the-app__btn_mobile {
+  display: none;
+}
+
 
 
 
